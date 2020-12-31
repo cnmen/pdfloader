@@ -1,0 +1,3 @@
+com/cmonbaby/hotfix/demo/MainActivity.class
+com/cmonbaby/hotfix/demo/BaseActivity.class
+com/cmonbaby/hotfix/demo/BaseApplication.class
