@@ -46,12 +46,6 @@ PDFLoader.with()
             @Override
             public void onLoadingComplete(String loadUrl, Bitmap loadedImage, LoadedFrom loadedFrom) {
                 Log.e(Cons.LOG_TAG, "onLoadingComplete -> " + loadUrl + " / " + loadedFrom.name());
-                if (pageCount == 0) {
-                    PdfBean bean = PDFLoader.getInstance().getEngine().getBean();
-                    if (bean == null) return;
-                    pageCount = bean.getPdfiumCore().getPageCount(bean.getPdfDocument());
-                }
-                page.setText((index + 1) + File.separator + pageCount);
             }
 
             @Override
